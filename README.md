@@ -12,7 +12,7 @@ Complete the information below regarding your group.
 - Member 1: (zID1) - Group leader
 - Member 2: (zID2) - role
 - Member 3: (zID3) - role
-- Member 4: Van Hai Ho (z3071030) - Data Specialist :-)
+- Member 4: Van Hai Ho (z3071030) - Technical and Data Specialist :-)
 
 ### Brief project description
 
