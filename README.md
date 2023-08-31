@@ -10,8 +10,8 @@ Complete the information below regarding your group.
 
 ### Group members and zIDs
 - Member 1: Abdelrhman Dameen (z5427841) - Group leader 
-- Member 2: (zID2) - role
-- Member 3: (zID3) - role
+- Member 2: Pam Moodley (z5366156) - role
+- Member 3: Nezam Uddin (z5339862) - role
 - Member 4: Van Hai Ho (z3071030) - Technical and Data Specialist
 
 ### Brief project description
