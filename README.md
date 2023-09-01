@@ -9,10 +9,10 @@ Complete the information below regarding your group.
 ## Group and project information
 
 ### Group members and zIDs
-- Member 1 (zID1) - Group leader
-- Member 2 (zID2) - role
-- Member 3 (zID3) - role
-- Member 4 (zID4) - role
+- Louis Long (z5162359) - Group leader
+- Charlet Jeyapaul (z5375906) - Programmer
+- Hao Chiou (z5131909) - Data Wrangling
+- Mark Budrewicz (z5353932) - Researcher
 
 ### Brief project description
 
