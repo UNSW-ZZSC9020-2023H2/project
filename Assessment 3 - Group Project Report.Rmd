@@ -1,0 +1,90 @@
+---
+title: "A Data Science Approach to Short-Term Energy Demand Forecast"
+team: L
+session: Hex 5, 2023
+coursecode: ZZSC9020
+author: 
+  - "Louis Long (z5162359)"
+  - "Mark Budrewicz (z5353932)"
+  - "Hao Chiou (z5131909)"
+  - "Charlet Jeyapaul (z5375906)"
+date: "07/10/2023"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+## default options of rendering code chunks
+
+# hide underlying code 
+knitr::opts_chunk$set(include = F)
+
+# show outputs
+knitr::opts_chunk$set(echo = T)
+
+# hide messages and warnings
+knitr::opts_chunk$set(message = F)
+knitr::opts_chunk$set(warning = F)
+```
+
+\newpage
+
+# Abstract
+
+<Insert abstract here>
+
+# Literature review
+
+<Insert literature review here>
+
+# Material and Methods
+
+## Software
+
+R and Python of course are great software for Data Science. Sometimes, you might want to use `bash` utilities such as `awk` or `sed`.
+
+Of course, to ensure reproducibility, you should use something like `Git` and RMarkdown (or a Jupyter Notebook). Do **not** use Word!
+
+## Description of the Data
+
+How are the data stored? What are the sizes of the data files? How many files? etc.
+
+## Pre-processing Steps
+
+What did you have to do to transform the data so that they become useable?
+
+## Data Cleaning
+
+How did you deal with missing data? etc. 
+
+## Assumptions
+
+What assumptions are you making on the data?
+
+## Modelling Methods
+
+# Exploratory Data Analysis
+
+# Analysis and Results
+
+# Discussion
+
+Put the results you got in the previous chapter in perspective with respect to the problem studied.
+
+# Conclusion
+
+--
+
+\newpage
+
+# References {-}
+
+<div id="refs"></div>
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+
+# Appendix {-}
