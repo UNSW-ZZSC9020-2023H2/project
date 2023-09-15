@@ -1,5 +1,5 @@
 ---
-title: "A Data Science Approach to Short-Term Energy Demand Forecast"
+title: "A Data Science Approach to Short-Term Electricity Demand Forecasting"
 team: L
 session: Hex 5, 2023
 coursecode: ZZSC9020
@@ -9,7 +9,8 @@ author:
   - "Hao Chiou (z5131909)"
   - "Charlet Jeyapaul (z5375906)"
 date: "07/10/2023"
-output:
+bibliography: references.bib
+output:   
   pdf_document:
     toc: true
     toc_depth: 3
@@ -35,6 +36,11 @@ knitr::opts_chunk$set(warning = F)
 # Abstract
 
 <Insert abstract here>
+
+# Motivation
+Electricity demand forecasting is a topic that is within the interest of government and market bodies, with the consensus of accurate forecasts of energy demand driving profitability. Electricity in Australia is generated primarily using oil, coal, and gas as fuel[@BhattacharyaMita2020Coep]. Also, with oil prices increasing, this implies that the cost to generate energy will also increase[@KpodarKangni2022Tdio]. Therefore, profit maximization is achieved when energy production is minimized to be near actual energy demand. Thus, if electricity demand can be modelled accurately, government and market bodies can then utilize such information to tailor policies as well as optimize pricing. A recent phenomenon in the electricity grid has been the shift towards renewable energy sources such solar photovoltaic and wind generation. While these technologies are indeed cleaner they bring with them risks[@arenawebsite] due to their intermittency and inability to be dispatchable as compared to electricity produced from fossil fuels. As of 2021, renewables accounted for 23% of total electricity generation in the state of NSW[@energywebsite]. As it is non dispatchable, renewable electricity generation acts to lower the energy demand of the grid, so much so, that the Australian Energy Market Operation (AEMO) has already acknowledged that the increasing uptake in rooftop solar will shift maximum load demand to later in the day at sunset as temperatures remain high but roof top solar output falls to nil[@AEMOdemandwebsite]. The increase in renewable electricity generation will see a parallel requirement for flexible electricity generation such as gas, pumped hydro and grid scale batteries with quick ramp up ability to cope with the variability in supply[@AGLwebsite]. And with that, a more robust shorter term electricity demand forecasting process will be required to ensure that the quick start alternative electricity generators have sufficient warning to ramp up when required.
+
+# Introduction
 
 # Literature review
 
