@@ -147,11 +147,11 @@ To clean the data to ensure there are no null measurements for any timeframe, fo
 
 
 ## Assumptions
-Based on the data used in this project, as well as various research completed in the past, a few assumptions could be made with regards to the behaviour of energy demand. 
+Based on the data used in this project, as well as various studies completed in the past, three main assumptions could be made with regards to behaviour of total energy demand upon interaction with various factors.
 
 The first assumption is energy demand will increase during colder or hotter temperatures. Based on research completed in the past, it has been confirmed that winter and summer seasons have higher demand for energy during heating and cooling needs [@SavicStevan2014Cawa]. Additionally, according to research completed by Zhang et al. suggests energy demand tends to increase when temperature increases drastically [@ZhangShaohui2022Etar]. 
 
-The second assumption would be in order for energy to be consumed, it would need to occur during the time of when the household residents are awake. Past studies suggest that energy demand does indeed to be higher between  6 am to 9 pm, in contrast to 10 pm ~ 5 am [@SavicStevan2014Cawa].
+The second assumption would be in order for energy to be consumed, it would need to occur during the time of household resident activity. Past studies suggest that energy demand does indeed to be higher between  6 am to 9 pm, in contrast to 10 pm ~ 5 am [@SavicStevan2014Cawa].
 
 For the third assumption, given energy demand seems to increase during hotter and colder temperatures, this raises the possibility that if the range of global temperature were to increase over time, it would lead to the possibility of energy demand increasing over the years. According to a study completed by Jakob and Walland to investigate Australian extreme temperatures, it has been established that the extremely hot temperatures are becoming more frequent [@JakobDorte2016Valc], which raises the question of potential increase in energy demand over the years.
 
