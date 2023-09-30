@@ -125,20 +125,21 @@ Year, Month, Day, Hour fields will be extracted from date time field
 
 Seasons will be derived from month field
 
-DuringDay from Hour, where 8 am ~ 8 pm will return 1 otherwise 0
+During Day = If hour is between 8 am ~ 8 pm then 1, else 0.
 
 NSW Public Holiday via utilising the tsibble package in R [@WangEaro2020ANTD]
 
 Extreme temperature of day and night fields will be derived via guideline provided by Australian government [@bomExtremeTemp]. The fields will return 1 if true, else 0.
 
-Extreme Hot Day = Over 40 degrees during day
-Hot Day = Over 35 degrees during day
-Extreme Hot Night = over 25 degrees during day
-Hot Night= over 20 degrees during day
-Extreme Cold day= under 10 degrees during day
-Cold day = under 15 degrees during day
-Extreme Cold Night= under 0 degrees during day
-Cold Night= under 5 degrees during day
+Extreme Hot Day = Over 40 degrees and during day equals to 1
+Hot Day = Over 35 degrees during day and during day equals to 1
+Extreme Hot Night = Over 25 degrees and during day equals to 1
+Hot Night= Over 20 degrees and during day equals to 1
+
+Extreme Cold day = Under 10 degrees and during day equals to 0
+Cold day = Under 15 degrees during day and during day equals to 0
+Extreme Cold Night= Under 0 degrees and during day equals to 0
+Cold Night= Under 5 degrees and during day equals to 0
 
 
 ## Data Cleaning
