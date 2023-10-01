@@ -209,8 +209,7 @@ Upon inspecting the correlation matrix of total energy demand against hour flags
 Overall, the correlation matrix  from figure 7,8 and 9 shows us that in terms of predictive model, the fields that definitely should be used are extreme temperature flags, hour flags, and month flags.
 
 Lagged Correlation of Total Energy Demand
-Finally, lagged correlation of total energy demand will be investigated. Lagged correlation looks at the correlation between time shifted time series data [@ZagourasAthanassios2015Otro]. Essentially what this section is after is finding the best lag that can be used to predict future total energy demand. In this case, lags of 0 to 24 will be tested. The result as per figure 10, is that the more correlated lag would be lag of 1 and 24, which 24 will be ignored as it is essentially the same time given 24 hours. Therefore, the best lag would be 1, of having the best lagged correlation.
-
+Finally, lagged correlation of total energy demand will be investigated. Lagged correlation looks at the correlation between time shifted time series data [@ZagourasAthanassios2015Otro]. Essentially what this section is after is finding the best lag that can be used to predict future total energy demand. In this case, lags of 0 to 24 will be tested. The result as per figure 10, is that the more correlated lag would be lag of 1 and 24, which 24 will be ignored as it is essentially the same time given 24 hours. Therefore, total energy demand has the highest lagged correlation when shifted with lag of 1.
 
 # Analysis and Results
 
