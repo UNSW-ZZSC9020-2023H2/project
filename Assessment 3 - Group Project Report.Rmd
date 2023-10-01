@@ -133,9 +133,11 @@ Year, Month, Day, Hour =  Extracted from datetime field
 
 Seasons = Derived from months, Spring = {9,10,11}, Summer = {12,1,2}, Autumn = {3,4,5}, and Winter = {6,7,8}
 
-During Day = If the hour is between 8 am ~ 8 pm then 1, else 0.
+During Day = If the hour is between 8 am ~ 8 pm then 1, else 0.(this timeframe is selected due to having positive correlation to total energy demand, refer to Figure 9)
 
-Public holiday = 1 if it’s a public holiday, else 0. NSW Public Holiday table is retrieved via utilising the tsibble package in R [@WangEaro2020ANTD]
+BusinessDay = If day between 1~5 then 1, else 0.
+
+pub_holiday_flag = 1 if it is a public holiday, else 0. NSW Public Holiday table is retrieved via utilising the tsibble package in R [@WangEaro2020ANTD]
 
 Extreme temperatures of day and night fields will be derived via guidelines provided by the Australian government [@bomExtremeTemp]. The fields will be in {1,0}.
 
