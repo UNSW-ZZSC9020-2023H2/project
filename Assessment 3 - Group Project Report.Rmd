@@ -170,8 +170,6 @@ In figure 1, line charts are created at the most granular level of year-month-da
 
 Looking at the general trend over time for all variables from figure 1, the only variable that displays seasonality without significant variability is temperature per hour. Total energy demand per hour and daily solar exposure displayed seasonality albeit having a large amount of variability. Daily rainfall on the other hand did not display any seasonality, or any resonance towards changes of trend occurred in total energy demand. 
 
-Figure 2 displays a line chart of data aggregated to a month level. Aggregating data to monthly level displays a clear smoothing impact to the line charts. 
-
 Looking at Trend via individual years
 When the data is viewed at a monthly level via line chart in Figure 2, clear seasonality can be identified in total energy demand, temperature, and solar exposure. Total rainfall viewed at monthly level still does not exhibit any seasonality. From an assumption perspective, traces of energy demand being affected by temperature are starting to appear. Also with regards to assumption three, the trend chart of monthly total energy demand over time is starting to display a slow decline in total energy demand over the years. 
 
@@ -191,10 +189,8 @@ Looking at hourly boxplot of total energy demand, the key point identified would
 
 Upon inspecting the densities of total energy demand by seasons and months via Figure 5, it can be further identified that the only group that has a visible different mean compared to the other seasons is winter. However upon looking at this at a monthly level, it can be identified that August does indeed have much wider distribution compared to June and July, as shown in figure 4 also. This further indicates that months should be used instead of seasons in predictive models in order to reduce noise.  
 
-Looking at total energy demand by temperature, rainfall, and solar exposure
-
+total energy demand against temperature, rainfall, and solar exposure
 Scatter Plot of figure 6 has been created to display the relationship between total energy demand and temperature, rainfall, and solar exposure. At top level, all scatter plots created in figure 6 are exhibiting great spread, suggesting correlation to be more useful in terms of strength of relationship. Nevertheless, it is still possible to get some characteristics from these relationships, particularly for temperature. From the total energy demand against temperature scatterplot, it is possible to identify that total energy demand increases when temperature shifts either left or right from 20 degrees. Rainfall and Solar scatter plots on the other hand exhibited little trend, where rainfall scatterplot is very much just stochastic when compared to total energy demand.
-
 
 Correlation
 Using the correlation matrix, it is possible to identify how strong are the relationships between each variable [@HaddAlexandria2021Ucm]. When the data is inspected at correlation perspective via figure 7, from total energy demand perspective, the highest correlated variables are nearly always associated with cold temperature. For example, it is understandable where temperature does not hold a strong correlation with total energy demand, given in figure 6, where the scatter plot does not exhibit a linear trend; however, from the correlation matrix of  figure 7, fields such as cold day, extreme cold day, and winter flag hold some of the highest correlation with total energy demand, indicating triggering those flags would result in higher total energy demand. Another field that holds a high correlation of 0.5 with total energy demand is during_day (flagging hours between 8 am ~ 8 pm), and this again strengthens assumption 2 of energy consumption being higher during human active hours. Furthermore, the negative correlation of -0.2 of datehour with total energy demand again contradicts assumption 3, hence we can settle with the statement that total energy demand is indeed gradually reducing over time. 
