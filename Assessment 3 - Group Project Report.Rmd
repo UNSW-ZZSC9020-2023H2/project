@@ -165,6 +165,48 @@ For the third assumption, given energy demand seems to increase during hotter an
 ## Modelling Methods
 
 # Exploratory Data Analysis
+Looking at the historical trend of all variables
+In figure 1, line charts are created at the most granular level of year-month-date-hour. However, at this level of detail, it is difficult to identify trends clearly due to the amount of noise presented, suggesting further aggregation is required in order to identify the trends clearly. Also to note that the final period recorded of 2022-08 is omitted from the charts, as the only datapoint from this particular month is incomplete at hour level, and would cause significant dropoff of trend. 
+
+Looking at the general trend over time for all variables from figure 1, the only variable that displays seasonality without significant variability is temperature per hour. Total energy demand per hour and daily solar exposure displayed seasonality albeit having a large amount of variability. Daily rainfall on the other hand did not display any seasonality, or any resonance towards changes of trend occurred in total energy demand. 
+
+Figure 2 displays a line chart of data aggregated to a month level. Aggregating data to monthly level displays a clear smoothing impact to the line charts. 
+
+Looking at Trend via individual years
+When the data is viewed at a monthly level via line chart in Figure 2, clear seasonality can be identified in total energy demand, temperature, and solar exposure. Total rainfall viewed at monthly level still does not exhibit any seasonality. From an assumption perspective, traces of energy demand being affected by temperature are starting to appear. Also with regards to assumption three, the trend chart of monthly total energy demand over time is starting to display a slow decline in total energy demand over the years. 
+
+When the monthly trend is viewed at individual year level as per Figure 3, it can be identified that the trend did not change significantly between 2010 and 2021, for energy demand, average temperature, and average solar exposure. The reason why 2022 is not used despite being the final year recorded is because the data used in this project does not contain all months of 2022. It can also be noted that total energy demand peaks when average monthly temperature is at its highest or lowest point. Additionally, solar exposure when magnified to monthly level surfaces its relationship with temperature clearly. Furthermore, rainfall's trend remained stochastic, exhibiting no relationship with other variables.
+
+Looking at Total Energy Demand via Boxplot at Yearly, Monthly, and Hourly level
+Through using boxplot, it is possible to see the distribution of total energy demand across time. Figure 4 displays total energy demand is plotted against various time variables, specifically year, month, and hour. Each of these views will be discussed individually as per below. 
+
+Year
+At yearly view we can see the fluctuation of max and min total energy demand across time. The most key point taken from this view would be  the slight decrease of average total energy consumption per hour across the years. This is an interesting point because it contradicts assumption 3, where an increase of total energy demand is expected due to an increase of extreme temperature occurrences.  Thus, we can rule the assumption to be false, where yearly average hourly total energy demand is indeed decreasing. 
+
+Month
+At a monthly level, it can be identified that months of June, July, August, January, and February have higher average hourly total energy demand compared to the other months. This further verifies assumption 1 to be true, where total energy demand is expected to increase during hotter and colder months, as the months mentioned usually have the highest or lowest temperatures as per displayed in figure 2 and 3. Out of the previously highlighted months, June and July have the highest average total energy demand. This potentially shows that most people are more tolerant to hotter rather than colder temperatures, as June and July happen to have the coldest temperatures as per Figure 2 and 3. Furthermore, the boxplot of total energy by month suggests that months would be the best variable to use in terms of predictive modelling rather than seasons, as not necessarily all months within the season have higher total energy demand. For example, August is part of winter but has lower average total energy demand when compared to June and July.
+
+Hour
+Looking at hourly boxplot of total energy demand, the key point identified would be total energy demand is highest between 8 am and 7 pm, and is lowest between 2 am to 6 am. This verified assumption 2, of total energy demand to be higher during hours of human activity. Hourly boxplot verifies that hour can be used as a variable in terms of modelling, as there is clearly a pattern exhibited by the chart particularly around the mean of total energy demand per hour.
+
+Upon inspecting the densities of total energy demand by seasons and months via Figure 5, it can be further identified that the only group that has a visible different mean compared to the other seasons is winter. However upon looking at this at a monthly level, it can be identified that August does indeed have much wider distribution compared to June and July, as shown in figure 4 also. This further indicates that months should be used instead of seasons in predictive models in order to reduce noise.  
+
+Looking at total energy demand by temperature, rainfall, and solar exposure
+
+Scatter Plot of figure 6 has been created to display the relationship between total energy demand and temperature, rainfall, and solar exposure. At top level, all scatter plots created in figure 6 are exhibiting great spread, suggesting correlation to be more useful in terms of strength of relationship. Nevertheless, it is still possible to get some characteristics from these relationships, particularly for temperature. From the total energy demand against temperature scatterplot, it is possible to identify that total energy demand increases when temperature shifts either left or right from 20 degrees. Rainfall and Solar scatter plots on the other hand exhibited little trend, where rainfall scatterplot is very much just stochastic when compared to total energy demand.
+
+
+Correlation
+Using the correlation matrix, it is possible to identify how strong are the relationships between each variable [@HaddAlexandria2021Ucm]. When the data is inspected at correlation perspective via figure 7, from total energy demand perspective, the highest correlated variables are nearly always associated with cold temperature. For example, it is understandable where temperature does not hold a strong correlation with total energy demand, given in figure 6, where the scatter plot does not exhibit a linear trend; however, from the correlation matrix of  figure 7, fields such as cold day, extreme cold day, and winter flag hold some of the highest correlation with total energy demand, indicating triggering those flags would result in higher total energy demand. Another field that holds a high correlation of 0.5 with total energy demand is during_day (flagging hours between 8 am ~ 8 pm), and this again strengthens assumption 2 of energy consumption being higher during human active hours. Furthermore, the negative correlation of -0.2 of datehour with total energy demand again contradicts assumption 3, hence we can settle with the statement that total energy demand is indeed gradually reducing over time. 
+
+In the correlation matrix of total energy demand against month flags, via figure 8, the highest correlation can be identified in July, as well as August, indicating higher energy demand during these two months. This is quite surprising as August had much less increase in terms of total energy demand compared to June and July as per Figure 4. This indicates that perhaps both July and August should be kept for creating the predictive model.
+
+Upon inspecting the correlation matrix of total energy demand against hour flags in Figure 9, it can be identified that hour 3 to 5 have the highest negative correlation, whilst hour 17 ~ 9 have the highest positive correlation. The correlation matrix of the hour flag against total energy demand again demonstrates that there is a pattern between total energy demand and hour of day.
+
+Overall, the correlation matrix  from figure 7,8 and 9 shows us that in terms of predictive model, the fields that definitely should be used are extreme temperature flags, hour flags, and month flags.
+
+Lagged Correlation of Total Energy Demand
+Finally, lagged correlation of total energy demand will be investigated. Lagged correlation looks at the correlation between time shifted time series data [@ZagourasAthanassios2015Otro]. Essentially what this section is after is finding the best lag that can be used to predict future total energy demand. In this case, lags of 0 to 24 will be tested. The result as per figure 10, is that the more correlated lag would be lag of 1 and 24, which 24 will be ignored as it is essentially the same time given 24 hours. Therefore, the best lag would be 1, of having the best lagged correlation.
 
 # Analysis and Results
 
